@@ -1,0 +1,14 @@
+<footer class="footer">
+    <div class="container">
+        <div class="navbar-menu">
+            <div class="navbar-start">
+                
+            </div>
+            <div class="navbar-end">                    
+                {{ range .Site.Menus.footer }}
+                <a href="{{ .URL }}" class="navbar-item is-size-6 is-render-mode">{{ .Name }}</a>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</footer>

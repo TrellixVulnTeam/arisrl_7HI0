@@ -1,0 +1,33 @@
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900');
+
+$light : #EDF2F4;
+$primary_color : #C10000;
+$dark0: rgba(53,57,64,1);
+$black: #000000;
+
+$primary: $primary_color;
+$link: $primary_color;
+$navbar-item-color: $primary;
+$navbar-item-active-color: $primary;
+$navbar-burger-color: $primary;
+$navbar-tab-active-color: $primary;
+$family-sans-serif: "Open Sans", sans-serif;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+@import "../../node_modules/bulma/bulma.sass";
+
+
+.footer {
+    background-color: #fafafa;
+    padding: 3rem 1.5rem .5rem; 
+    font-family: "Open sans", "sans-serif";
+    font-weight: 700;
+}
+
+.max-800px {
+    max-width: 800px;
+}
