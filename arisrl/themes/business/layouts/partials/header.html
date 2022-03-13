@@ -3,7 +3,7 @@
         <div class="container">
             <div class="navbar-brand">
                 <a href="/" title="home" class="navbar-item">
-                    <img src="/logo.png"/>
+                    <img src="/logo_title.png"/>
                 </a>
                 <a id="navbar-burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menubar">
                     <span aria-hidden="true"></span>
@@ -16,7 +16,7 @@
                     {{ range .Site.Menus.main }}
                     <div class="link_nav">
                         <a href="{{ .URL }}" class="navbar-item" data-target="{{ .Name }}">
-                            <h2>{{ .Name }}</h2>
+                            <h2 class="pt-4">{{ .Name }}</h2>
                         </a>
                     </div>
                     {{ end }}
