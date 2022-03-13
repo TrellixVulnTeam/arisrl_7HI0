@@ -4,7 +4,7 @@ title = 'ARI'
 theme = "business"
 googleAnalytics = "UA-123-45"
 disableLiveReload = true
-
+disableFastRender = true
 
 [[menu.main]]
   name = "Contattaci"

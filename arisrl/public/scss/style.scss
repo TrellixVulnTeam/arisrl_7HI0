@@ -1,0 +1,95 @@
+
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,900');
+
+$light : #EDF2F4;
+$primary_color : #C10000;
+$dark0: rgba(53,57,64,1);
+$black: #000000;
+
+$primary: $primary_color;
+$link: $primary_color;
+$navbar-item-color: $primary;
+$navbar-item-active-color: $primary;
+$navbar-burger-color: $black;
+$navbar-tab-active-color: $primary;
+$family-sans-serif: gopher, sans-serif;
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+$navbar-item-img-max-height: 5vh;
+@import "../../node_modules/bulma/bulma.sass";
+
+
+.footer {
+    // height: 150px;
+    background-color: #fafafa;
+    padding: 3rem 1.5rem 3rem; 
+    font-family: gopher, sans-serif;
+    font-weight:500;
+    text-transform:capitalize;
+    text-shadow: $black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
+
+
+/* The hero image */
+.bg_image {
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url(/img_first_section.jpg);
+
+  /* Set a specific height */
+
+  /* Position and center the image to scale nicely on all screens */
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-direction: column-reverse;
+  -ms-flex-direction: column-reverse;
+  flex-direction: column-reverse;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-background-size: cover; 
+  -moz-background-size:cover; 
+  -o-background-size: cover; 
+  background-size: cover;
+  position: relative;
+  height: 70vh;
+  width: 100vw;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+}
+
+.card_content {
+    position: absolute;
+    color: white;
+    top: 50%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3));
+  }
+.link_nav{
+    font-family: gopher, sans-serif;
+    font-weight:500;
+    text-transform:capitalize;
+    text-shadow: $black;
+}
+
+h1 {
+    font-size: 5vh;
+}
+h2 {
+  font-size: 3vh;
+}
+
