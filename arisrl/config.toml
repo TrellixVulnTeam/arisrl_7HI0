@@ -7,10 +7,10 @@ googleAnalytics = "UA-123-45"
 
 
 [[menu.main]]
-  name = "CONTATTACI"
+  name = "Contattaci"
   url = "/contact"
 [[menu.main]]
-  name = "CHI SIAMO"
+  name = "Chi siamo"
   url = "/about"
 [[menu.footer]]
   name = "Contattaci"

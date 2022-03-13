@@ -1,12 +1,13 @@
-<footer class="footer">
+<footer class="navbar is-fixed-bottom">
     <div class="container">
         <div class="navbar-menu">
-            <div class="navbar-start">
-                
-            </div>
             <div class="navbar-end">                    
                 {{ range .Site.Menus.footer }}
-                <a href="{{ .URL }}" class="navbar-item is-size-6 is-render-mode">{{ .Name }}</a>
+                <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
+                {{ end }}
+                {{ range .Site.Menus.social }}
+                <a href="{{ .URL }}" class="navbar-item" title="{{ .Name }}">
+                    <span class="icon">{{ .Pre }}</span> </a>
                 {{ end }}
             </div>
         </div>

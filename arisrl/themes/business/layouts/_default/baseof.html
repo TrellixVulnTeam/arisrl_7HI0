@@ -3,9 +3,15 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
+        {{- partial "first_section.html" . -}}
         <main>
-        {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }} 
+            <!-- product category 1: Le cucine -->
+            <!-- product category 2: I mobili -->
+            <!-- product category 3: Gli infissi -->
         </main>
+        {{- partial "bonus_infissi.html" . -}}
+        {{- partial "last_section.html" . -}}
         {{- partial "footer.html" . -}}
     </body>
 </html>
