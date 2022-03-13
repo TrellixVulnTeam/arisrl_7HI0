@@ -4,6 +4,10 @@ auto_deploy: false
 admin_path: ''
 webhook_url: 
 sections:
+- type: document
+  path: arisrl/content
+  label: LABEL
+  match: "**/*"
 - type: directory
   path: arisrl/content
   label: Pages
