@@ -3,7 +3,7 @@ languageCode = 'it-it'
 title = 'ARI'
 theme = "business"
 googleAnalytics = "UA-123-45"
-
+disableLiveReload = true
 
 
 [[menu.main]]
