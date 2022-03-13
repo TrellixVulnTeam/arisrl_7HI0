@@ -21,15 +21,24 @@ $input-shadow: none;
 $navbar-item-img-max-height: 5vh;
 @import "../../node_modules/bulma/bulma.sass";
 
-footer {
-    position: absolute;
-    height: 100px;
+.footer {
+    // height: 150px;
     background-color: #fafafa;
     padding: 3rem 1.5rem 3rem; 
     font-family: gopher, sans-serif;
     font-weight:500;
     text-transform:capitalize;
     text-shadow: $black;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
 }
 
 
@@ -81,11 +90,5 @@ h1 {
 }
 h2 {
   font-size: 3vh;
-}
-h3{
-    font-size: 2vh;
-}
-p {
-    font-size: 1vmin;
 }
 

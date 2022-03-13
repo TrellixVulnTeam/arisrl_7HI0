@@ -7847,15 +7847,21 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-footer {
-  position: absolute;
-  height: 100px;
+.footer {
   background-color: #fafafa;
   padding: 3rem 1.5rem 3rem;
   font-family: gopher, sans-serif;
   font-weight: 500;
   text-transform: capitalize;
   text-shadow: #000000; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; }
+
+main {
+  flex: 1; }
 
 /* The hero image */
 .bg_image {
@@ -7901,9 +7907,3 @@ h1 {
 
 h2 {
   font-size: 3vh; }
-
-h3 {
-  font-size: 2vh; }
-
-p {
-  font-size: 1vmin; }
