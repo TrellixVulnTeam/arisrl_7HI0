@@ -1,4 +1,4 @@
-baseURL = 'http://example.org/'
+baseURL = 'https://arisrl.netlify.app'
 languageCode = 'it-it'
 title = 'ARI'
 theme = "business"
