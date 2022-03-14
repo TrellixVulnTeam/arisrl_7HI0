@@ -10,7 +10,7 @@ disableFastRender = true
   name = "Contattaci"
   url = "/contact"
 [[menu.main]]
-  name = "Chi siam"
+  name = "Chi siamo"
   url = "/about"
 [[menu.footer]]
   name = "Contattaci"
