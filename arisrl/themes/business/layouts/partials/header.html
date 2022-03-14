@@ -1,35 +1,44 @@
-<header>
-    <nav class="navbar is-fixed-top" role="navigation" aria-label="main navigation">
-        <div class="container">
-            <div class="navbar-brand">
-                <a href="/" title="home" class="navbar-item">
-                    <img src="/logo_title.png"/>
-                </a>
-                <a id="navbar-burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menubar">
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                    <span aria-hidden="true"></span>
-                </a>
-            </div>
-            <div id="menubar" class="navbar-menu">
-                <div class="navbar-start">
-                    {{ range .Site.Menus.main }}
-                    <div class="link_nav">
-                        <a href="{{ .URL }}" class="navbar-item" data-target="{{ .Name }}">
-                            <h2 class="pt-4">{{ .Name }}</h2>
-                        </a>
+<header class="header-nav">
+    <div class="container-xxl">
+        <div class="row">
+           <div class="col-12">
+                <nav class="navbar is-fixed-top">
+                    <div class="container">
+                        <div class="navbar-brand">
+                            <a href="/" title="home" class="navbar-item">
+                                <img loading="preload" decoding="async" class="img-fluid" alt="{{ site.Title }}" src="/logo_title.png">
+                            </a>
+                            <a id="navbar-burger" role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="menubar">
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                                <span aria-hidden="true"></span>
+                            </a>
+                        </div>
+                        <div id="menubar" class="navbar-menu">
+                            <div class="navbar-start">
+                                {{ range .Site.Menus.main }}
+                                <div class="navbar-item" data-target="{{ .Name }}" >
+                                    <a href="{{ .URL }}" class = "nav_link">{{ .Name }}</a>
+                                </div>
+                                {{ end }}
+                            </div>
+                            <div class="navbar-end">
+                                {{ range .Site.Menus.social }}
+                                <a href="{{ .URL }}" class="navbar-item" title="{{ .Name }}">
+                                    <span class="icon">{{ .Pre }}</span> </a>
+                                {{ end }}
+                                <div href="/" title="contact" class="navbar-item" title="Contact">
+                                    <a class = "nav_link_underlined">CHIEDI UN PREVENTIVO</a>
+                                </div>
+                                    
+                            </div>
+                                
+                        </div>
                     </div>
-                    {{ end }}
-                </div>
-                <div class="navbar-end">
-                    {{ range .Site.Menus.social }}
-                    <a href="{{ .URL }}" class="navbar-item" title="{{ .Name }}">
-                        <span class="icon">{{ .Pre }}</span> </a>
-                    {{ end }}
-                </div>
+                </nav>
             </div>
         </div>
-    </nav>
+    </div>
     <script>
         const burger = document.getElementById('navbar-burger');
         burger.addEventListener('click', () => {

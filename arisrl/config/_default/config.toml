@@ -6,23 +6,5 @@ googleAnalytics = "UA-123-45"
 disableLiveReload = true
 disableFastRender = true
 
-[[menu.main]]
-  name = "Contattaci"
-  url = "/contact"
-[[menu.main]]
-  name = "Chi siamo"
-  url = "/about"
-[[menu.footer]]
-  name = "Contattaci"
-  url = "/contact"
-[[menu.footer]]
-  name = "Chi siamo"
-  url = "/about"
-[[menu.social]]
-    name = "Instagram"
-    url = "https://www.instagram.com/ari_falegnameria"
-    pre = "<i class='fab fa-instagram fa-lg'></i>"
-[[menu.social]]
-    name = "Facebook"
-    url = "https://www.facebook.com/arifalegnameria"
-    pre = "<i class='fab fa-facebook-f fa-lg'></i>"
+
+

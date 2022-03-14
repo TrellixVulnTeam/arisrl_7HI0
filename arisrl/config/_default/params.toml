@@ -1,0 +1,19 @@
+
+author = "Stefano Perna"
+
+# favicon
+favicon = "/logo.png"
+# logo
+logo = "/logo_title.png"
+
+# logo text will only show when logo is missing.
+logo_text = "ARI"
+
+# footer information
+footer_info = "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo tellus, sed condimentum volutpat."
+
+# contact form action
+#contact_form_action = "" # contact form works with netlify
+
+# copyright
+copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"

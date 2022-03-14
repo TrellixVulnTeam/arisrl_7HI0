@@ -1,0 +1,52 @@
+[[main]]
+  name = "Home"
+  url = "/"
+  weight = 1
+
+[[main]]
+  name = "Prodotti"
+  url = "/product"
+  weight = 2
+
+[[main]]
+  name = "Dove siamo"
+  url = "/where"
+  weight = 3
+
+[[main]]
+  name = "Contattaci"
+  url = "/contact"
+  weight = 4
+
+[[main]]
+  name = "Chi siamo"
+  url = "/about"
+  weight = 5
+
+[[footer]]
+  name = "Dove siamo"
+  url = "/where"
+  weight = 1
+
+[[footer]]
+  name = "Chi siamo"
+  url = "/about"
+  weight = 3
+
+[[footer]]
+  name = "Contattaci"
+  url = "/contact"
+  weight = 2
+
+[[social]]
+    name = "Facebook"
+    url = "https://www.facebook.com/arifalegnameria"
+    pre = "<i class='fab fa-facebook-f fa-lg'></i>"
+    weight = 1
+
+[[social]]
+    name = "Instagram"
+    url = "https://www.instagram.com/ari_falegnameria"
+    pre = "<i class='fab fa-instagram fa-lg'></i>"
+    weight = 2
+  
