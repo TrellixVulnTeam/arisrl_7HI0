@@ -13,5 +13,33 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.4/css/bulma.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="{{ "/css/style.css" | relURL }}" />
+    
+    <!-- {{ range .Site.Params.custom.css -}}
+            {{ $style := resources.Get .link }}
+            <link rel="stylesheet" href="{{ $style.RelPermalink }}">
+    {{- end }}
+    <-- JS Plugins + Main script -->
+    <!-- {{ $scripts := slice }}
+    {{ range site.Params.plugins.js}}
+    {{ if findRE "^http" .link }}
+    <script src="{{ .link | relURL }}" type="application/javascript" {{.attributes | safeHTMLAttr}}></script>
+    {{ else }}
+    {{ $scripts = $scripts | append (resources.Get .link) }}
+    {{ end }}
+    {{ end }}
+    {{ $scripts := $scripts | append (resources.Get "js/script.js" | minify) }}
+    {{ $scripts := $scripts | resources.Concat "/js/script.js" | minify | fingerprint "sha512" }}
+    <script crossorigin="anonymous" defer="defer" integrity="{{ $scripts.Data.Integrity }}" type="application/javascript">{{$scripts.Content | safeJS}}</script> -->
+        
+    <!-- plugins + stylesheet -->    
+    <!-- {{ $styles := slice }}
+    {{ range site.Params.plugins.css }}
+    {{ if findRE "^http" .link }}
+    {{ else }}
+    {{ $styles = $styles | append (resources.Get .link) }}
+    {{ end }}
+    {{ end }}
+    {{ $styles := $styles | append (resources.Get "scss/style.scss" | resources.ExecuteAsTemplate "style.scss" . | toCSS) }}
+    {{ $styles := $styles | resources.Concat "/css/style.css" | minify | fingerprint "sha512"}}
+    <style type="text/css">{{$styles.Content | safeCSS}}</style> -->
 </head>

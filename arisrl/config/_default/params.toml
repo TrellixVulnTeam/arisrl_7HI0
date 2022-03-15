@@ -17,3 +17,40 @@ footer_info = "Lorem ipsum dolor sit sed dmi amet, consectetur adipiscing. Cdo t
 
 # copyright
 copyright = "Designed By [Themefisher](https://themefisher.com/) & Developed By [Gethugothemes](https://gethugothemes.com/)"
+
+############################# Plugins ##############################
+
+# CSS Plugins
+[[plugins.css]]
+link = "plugins/swiper/swiper-bundle.min.css"
+[[plugins.css]]
+link = "plugins/bootstrap/bootstrap.min.css"
+# UNUSED
+    
+    # [[plugins.css]]
+    # link = "plugins/line-awesome/css/line-awesome.min.css"
+
+# [[plugins.css]]
+# link = "plugins/aos/aos.css"
+
+# JS Plugins
+[[plugins.js]]
+link = "plugins/jquery/jquery.min.js"
+[[plugins.js]]
+link = "plugins/swiper/swiper-bundle.min.js"
+[[plugins.js]]
+link = "plugins/bootstrap/bootstrap.min.js"
+
+# UNUSED
+    # [[plugins.js]]
+    # link = "plugins/aos/aos.js"
+    # [[plugins.js]]
+    # link = "plugins/rellax/rellax.min.js"
+    # [[plugins.js]]
+    # link = "plugins/webfont-loader/webfont-loader-2.min.js"
+
+# Custom CSS
+
+# Custom JS
+[[custom.js]]
+link = "js/script.js"

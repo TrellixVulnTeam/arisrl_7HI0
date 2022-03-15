@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html class="has-navbar-fixed-top" lang="{{ .Site.LanguageCode }}">
-    {{- partial "head.html" . -}}
+    
+    <head>
+        {{- partial "head.html" . -}}
+        {{ partial "style.html" . }}
+    </head>
     <body>
         {{- partial "header.html" . -}}
-        {{- partial "first_section.html" . -}}
+        <!-- {{- partial "first_section.html" . -}} -->
         <main>
             {{- block "main" . }}{{- end }} 
             <!-- product category 1: Le cucine -->
@@ -12,6 +16,7 @@
         </main>
         {{- partial "bonus_infissi.html" . -}}
         {{- partial "last_section.html" . -}}
+        {{ partial "script.html" . }}
         {{- partial "footer.html" . -}}
     </body>
 </html>
