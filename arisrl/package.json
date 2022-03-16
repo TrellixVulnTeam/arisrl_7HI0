@@ -18,5 +18,8 @@
     "node-sass": "^7.0.1",
     "postcss": "^8.4.11",
     "postcss-cli": "^9.1.0"
+  },
+  "dependencies": {
+    "netlify-plugin-cloudinary": "^1.0.1"
   }
 }
