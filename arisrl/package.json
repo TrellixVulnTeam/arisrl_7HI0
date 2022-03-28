@@ -4,12 +4,24 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "hugo",
+    "build:preview": "hugo --baseURL \"${DEPLOY_PRIME_URL:-/}\" --buildDrafts --buildFuture",
+    "start": "hugo server -D --bind=0.0.0.0",
+    "clean": "rm -rf node_modules",
+    "rebuild": "npm run clean && npm install && npm run build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.3",
     "bulma": "^0.9.3",
-    "node-sass": "^7.0.1"
+    "hugo-extended": "^0.95.0",
+    "node-sass": "^7.0.1",
+    "postcss": "^8.4.11",
+    "postcss-cli": "^9.1.0"
+  },
+  "dependencies": {
+    "netlify-plugin-cloudinary": "^1.0.1"
   }
 }

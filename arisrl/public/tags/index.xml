@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on ARI</title>
-    <link>http://example.org/tags/</link>
-    <description>Recent content in Tags on ARI</description>
+    <title>Tags on Falegnameria artigiana ARI dei f.lli Perna | Cosenza</title>
+    <link>https://arisrl.netlify.app/tags/</link>
+    <description>Recent content in Tags on Falegnameria artigiana ARI dei f.lli Perna | Cosenza</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>it-it</language><atom:link href="http://example.org/tags/index.xml" rel="self" type="application/rss+xml" />
+    <language>it-it</language><atom:link href="https://arisrl.netlify.app/tags/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>

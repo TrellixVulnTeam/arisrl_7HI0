@@ -1,14 +1,21 @@
+
 <footer class="footer">
     <div class="container">
-        <div class="navbar-menu">
-            <div class="navbar-start">
-                
-            </div>
-            <div class="navbar-end">                    
+        <div class="navbar-start">
+                <div class="column">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                    </p>
+                </div>
+        </div>
+        <div class="navbar-end">
                 {{ range .Site.Menus.footer }}
-                <a href="{{ .URL }}" class="navbar-item is-size-6 is-render-mode">{{ .Name }}</a>
+                <a href="{{ .URL }}" class="navbar-item">{{ .Name }}</a>
                 {{ end }}
-            </div>
+                {{ range .Site.Menus.social }}
+                <a href="{{ .URL }}" class="navbar-item" title="{{ .Name }}">
+                    <span class="icon">{{ .Pre }}</span> </a>
+                {{ end }}
         </div>
     </div>
 </footer>

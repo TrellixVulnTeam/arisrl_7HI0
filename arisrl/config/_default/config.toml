@@ -1,0 +1,11 @@
+baseURL = 'https://arisrl.netlify.app'
+languageCode = 'it-it'
+title = 'Falegnameria artigiana ARI dei f.lli Perna | Cosenza'
+description = "Falegnameria artigiana ARI in provincia di Cosenza, Calabria, Italia. Mobili, finestre, cucine, arredamento, interior design su misura."
+theme = "business"
+googleAnalytics = "UA-123-45"
+disableLiveReload = true
+disableFastRender = true
+
+
+

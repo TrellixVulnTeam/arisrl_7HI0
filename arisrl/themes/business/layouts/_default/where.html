@@ -1,0 +1,42 @@
+{{ define "main" }}
+
+
+<h1 class="visuallyhidden">COSENZA|CALABRIA|MOBILI|ARREDAMENTO|CUCINE|INFISSI|PORTE|FINESTRE</h1>
+{{with .Params.where}}
+
+<section>
+  <div class="container py-6">
+    <div class="maps-container">
+      <div id="title1">
+        <h2 style="font-size:xx-large; text-transform: capitalize;">{{ .title1 }}</h2>
+        <p>{{ .subtitle1 }}</p>
+      </div>
+      <div id="map1" class="map-responsive">
+        <div class="loading-container" id="loading1">
+          <div class="loading-text mb-4" style="font-size:larger; text-transform: uppercase;">{{ .loading }}</div>
+            <div class="box"></div>
+        </div>
+        <iframe id="map1-iframe" style="opacity: 0" width="100%" height="100%" style="border:0" loading="eager" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJj9L97LiQPxMRktZuNbzJvsw&key=AIzaSyAtHV-HM2T9yfi4lQvyl8FMyRs_cq5EHKE
+          &language=it">
+        </iframe>
+      </div>
+      <div id="title2">
+        <h2 style="font-size:xx-large; text-transform: capitalize;">{{ .title2 }}</h2>
+        <p>{{ .subtitle2 }}</p>
+      </div>
+      <div id="map2" class="map-responsive">
+        <div class="loading-container" id="loading2">
+          <div class="loading-text mb-4" style="font-size:larger; text-transform: uppercase;">{{ .loading }}</div>
+          <div class="box"></div>
+        </div>
+        <iframe id="map2-iframe" style="opacity: 0" width="100%" height="100%" style="border:0" loading="eager" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJnz0lQkuXPxMRMq2rAMce8Qg&key=AIzaSyAtHV-HM2T9yfi4lQvyl8FMyRs_cq5EHKE
+        &language=it">
+        </iframe>
+      </div>
+    </div>
+  </div>
+</section>
+
+{{ end }}
+
+{{ end }}

@@ -1,0 +1,43 @@
+{{ define "main" }}
+
+
+<h1 class="visuallyhidden">COSENZA|CALABRIA|MOBILI|ARREDAMENTO|CUCINE|INFISSI|PORTE|FINESTRE</h1>
+
+{{with .Params.products}}
+<section>
+  <div class="container py-6">
+    <div class="product-categories">
+      <a href="{{ .content1_url }}">
+        <div id="content1" class="category zoom_in_animable">
+          <div class="category-content px-3 py-3">
+            <a class="category-title" style="font-size: 3vmax; color: white;">{{ .content1_title }}</a>
+          </div>
+        </div>
+      </a>
+      <a href="{{ .content2_url }}">
+        <div id="content2" class="category zoom_in_animable">
+          <div class="category-content px-3 py-3">
+            <a class="category-title pb-0" style="font-size: 3vmax; color: white;">{{ .content2_title }}</a>
+          </div>
+        </div>
+      </a>
+      <a href="{{ .content3_url }}">
+        <div id="content3" class="category zoom_in_animable">
+          <div class="category-content px-3 py-3">
+            <a class="category-title" style="font-size: 3vmax; color: white;">{{ .content3_title }}</a>
+          </div>
+        </div>
+      </a>
+      <a href="{{ .content4_url }}">
+        <div id="content4" class="category zoom_in_animable">
+          <div class="category-content px-3 py-3">
+            <a class="category-title" style="font-size: 3vmax; color: white;">{{ .content4_title }}</a>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+{{ end }}
+
+{{ end }}
